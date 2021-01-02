@@ -60,31 +60,28 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageViewAttention" />
 
-        <!--
-        Checkbox and textview must be side by side.
-        Orientation must be horizontal and Linear Layout is perfect for
-        like this jobs
-        -->
-        <LinearLayout
-            android:id="@+id/linearLayout"
+
+        <CheckBox
+            android:id="@+id/checkBox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="@+id/textViewContractLabel"
-            app:layout_constraintTop_toBottomOf="@+id/nestedScrollView">
+            android:checked="@={myViewModel.isChecked()}"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nestedScrollView" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="@={myViewModel.isChecked()}" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/read_it" />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read_it"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBox2"
+            app:layout_constraintTop_toTopOf="@+id/checkBox2" />
 
         <Button
             android:id="@+id/buttonToShoeList"
@@ -95,7 +92,7 @@
             android:text="@string/to_the_shoe_list"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
