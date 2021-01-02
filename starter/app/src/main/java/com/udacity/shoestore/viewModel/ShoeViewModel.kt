@@ -54,6 +54,7 @@ class ShoeViewModel : ViewModel() {
 
     fun addShoe() {
         shoeListDataBase.add(getShoe())
+        clearShoe()
     }
 
     fun checkIsNotBlank(): StatusShoe {
@@ -72,6 +73,17 @@ class ShoeViewModel : ViewModel() {
 
     fun getShoe(): Shoe {
         return Shoe(name, size.toDouble(), company, desc)
+    }
+
+    fun setShoe(shoe: Shoe) {
+        name = shoe.name
+        size = shoe.size.toString()
+        company = shoe.company
+        desc = shoe.description
+    }
+
+    fun clearShoe() {
+        setShoe(Shoe("", 0.0, "", ""))
     }
 
 }

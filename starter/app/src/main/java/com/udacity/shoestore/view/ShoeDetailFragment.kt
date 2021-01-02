@@ -31,7 +31,7 @@ class ShoeDetailFragment : Fragment() {
 
         binding.buttonCancel.setOnClickListener {
             requireView().findNavController().popBackStack()
-            clearEditText()
+            viewModel.clearShoe()
         }
 
 
@@ -40,8 +40,8 @@ class ShoeDetailFragment : Fragment() {
                 when (checkIsNotBlank()) {
                     ShoeViewModel.StatusShoe.SUCCESS -> {
                         addShoe()
-                        clearEditText()
                         requireContext().shortLengthToastText(getString(R.string.success))
+                        requireView().findNavController().popBackStack()
                     }
                     ShoeViewModel.StatusShoe.INCORRECT_SIZE_TYPE -> requireContext().shortLengthToastText(
                         getString(R.string.incorrect_type)
@@ -56,15 +56,6 @@ class ShoeDetailFragment : Fragment() {
         }
 
         return binding.root
-    }
-
-    fun clearEditText() {
-        binding.apply {
-            editTextName.text.clear()
-            editTextSize.text.clear()
-            editTextCompany.text.clear()
-            editTextDescription.text.clear()
-        }
     }
 
 
