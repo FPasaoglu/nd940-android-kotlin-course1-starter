@@ -37,7 +37,7 @@ class SignUpFragment : Fragment() {
                 )
                 viewModel.clearUser()
             } else {
-                requireContext().shortLengthToastText(getString(R.string.incorrect_signup))
+                requireContext().shortLengthToastText(getString(R.string.fail_fill_all_blank))
             }
         }
         return binding.root

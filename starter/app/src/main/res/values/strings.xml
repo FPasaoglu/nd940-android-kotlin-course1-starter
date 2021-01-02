@@ -1,17 +1,37 @@
 <resources>
     <string name="app_name">Shoe Store</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    // Login
     <string name="login_text">Login</string>
     <string name="email">E_mail</string>
     <string name="password">Password</string>
-    <string name="sing_up">Sing Up</string>
     <string name="username">Username</string>
-    <string name="incorrect_login">Incorrect username/password please check again or Signup</string>
     <string name="phone">Phone Number</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="incorrect_login">Incorrect username/password please check again or Signup</string>
+
+
+    // Others
     <string name="welcome">Welcome</string>
-    <string name="incorrect_signup">Please fill all blank</string>
     <string name="to_the_instruction">Go To Instruction Page</string>
     <string name="to_the_shoe_list">Go To Shoe List Page</string>
+
+    // Contract
+    <string name="contract">This agreement is established and signed in Chinese. 19.2 The matter not stated in this agreement will be negotiated by the Mortgagor, co-lead bank and Guarantee Agent Bank. The supplement agreement can be signed by the Mortgagor and Guarantee Agent Bank. If the supplement agreement refers to the alteration of registered contents in the contract, the alteration register formalities shall be handled based on the supplement agreement. The supplement agreement will have same legal effect with this agreement. 19.3 The appendix of this Maximum Amount Property Mortgage Contract is the effective part of this agreement. 19.4 The Maximum Amount Property Mortgage Contract shall be signed in ( ) originals. Each of Mortgagor, Mortgagee and Guarantee Agent Bank hold one. Other originals shall be kept in the Guarantee Agent Bank for the mortgage register of this agreement. Each original has the same effect. (The remainder of this page is intentionally left blank.) Page of Signature Mortgagor: Wuxi Seamless Oil Pipe Co., Ltd. Add:P.O.: Principal: Tel: Fax:Contact Person: Authorized signer: Name: seal</string>
+    <string name="contractLabel">This is Shoe Store Contract please read it</string>
+    <string name="read_it">I confirm that I have read, understand and agree.</string>
+
+    // ShoeList
+    <string name="name">Name : </string>
+    <string name="size">Size : </string>
+    <string name="company">Company : </string>
+    <string name="description">Description : </string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    // Status
+    <string name="success">Shoe added successfully</string>
+    <string name="fail_fill_all_blank">Please fill all blank</string>
+    <string name="incorrect_type">Please enter Size blank correctly</string>
 
 </resources>

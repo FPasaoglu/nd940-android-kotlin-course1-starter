@@ -2,7 +2,7 @@
 <resources>
 
     <dimen name="padding_large">32dp</dimen>
-    <dimen name="padding_medium">32dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
     <dimen name="padding_small">8dp</dimen>
     <dimen name="padding_xsmall">4dp</dimen>
 
@@ -10,5 +10,7 @@
     <dimen name="text_medium">16sp</dimen>
     <dimen name="text_small">8sp</dimen>
     <dimen name="text_xsmall">4sp</dimen>
+
+    <dimen name="scroll_view_dimen">250dp</dimen>
 
 </resources>

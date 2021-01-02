@@ -3,10 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
+        app:layoutDescription="@xml/fragment_welcome_xml_constraintlayout_scene"
         tools:context=".view.WelcomeFragment">
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -70,6 +72,6 @@
             app:layout_constraintTop_toBottomOf="@+id/textViewPhoneNumber"
             app:layout_constraintVertical_bias="0.110000014" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
 
 </layout>
