@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--
+    I've used MotionLayout to animation these views. in layoutDescriotion
+    you can look at the start layout and end layout.
+    I prefered Constraint Layout to place them . This is complex layout
+    and I place them all where I want.
+    -->
     <androidx.constraintlayout.motion.widget.MotionLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"

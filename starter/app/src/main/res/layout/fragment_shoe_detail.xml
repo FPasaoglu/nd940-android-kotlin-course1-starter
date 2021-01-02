@@ -10,6 +10,12 @@
             type="com.udacity.shoestore.viewModel.ShoeViewModel" />
     </data>
 
+    <!--
+    This layout occur with textViews and two buttons I prefer
+    Constraint Layout to place them correctly and easly.
+    I could use Linear Layout with orientation vertical but it is
+    hard to margin that.
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutShoeDetail"
         android:layout_width="match_parent"
@@ -98,6 +104,12 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!--
+        This case is not complex, I've prefed linear layout with
+        orientation horizontal and linked linear layout to editText,
+        so I can easly move place of linear layout without changing
+        buttons margin
+        -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -107,7 +119,6 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout66">
-
 
             <Button
                 android:id="@+id/buttonCancel"

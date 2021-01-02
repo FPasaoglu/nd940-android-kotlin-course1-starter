@@ -11,6 +11,13 @@
             type="com.udacity.shoestore.viewModel.UserViewModel" />
     </data>
 
+    <!--
+    The editTexts must be under the others and above the Button.
+    The Layout is not complex I could use Linear Layout with orientation
+    vertical , but I prefered Constraint Layout to place gravity to
+    what I want
+    -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutLogin"
         android:layout_width="match_parent"

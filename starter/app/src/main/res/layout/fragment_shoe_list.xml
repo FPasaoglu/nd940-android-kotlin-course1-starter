@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".view.ShoeListFragment">
 
+    <!--
+    I've prefered ContraintLayout for FloatingActionButton.
+    I tried with linear layout but it is hard to place them
+    with correct gravity. Alternatively I could use RelativeLayout
+    alignParentRight and alignParentBotton = true
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >

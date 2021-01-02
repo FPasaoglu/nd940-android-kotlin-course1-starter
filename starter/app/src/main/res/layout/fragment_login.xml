@@ -12,6 +12,11 @@
             type="com.udacity.shoestore.viewModel.UserViewModel" />
     </data>
 
+    <!--
+    The editTexts must be under the ImageView and under those, must be Button.
+    This layout is complex but using Constraint Layout you can connected
+    one view to other. It is easy to use
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayoutLogin"
         android:layout_width="match_parent"

@@ -4,6 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
+    <!--
+    I used linear layout for vertical orientation, There is a toolbar and
+    bottom of toolbar there is a fragment. This is not complex and
+    linear layout is enough to visuliaze those.
+    -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

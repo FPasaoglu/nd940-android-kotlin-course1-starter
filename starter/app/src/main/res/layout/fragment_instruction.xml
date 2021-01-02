@@ -10,6 +10,11 @@
             type="com.udacity.shoestore.viewModel.InstructionViewModel" />
     </data>
 
+    <!--
+    This is a complex layout, the textview linked with image
+    under the checkbox linked with button etc. ConstraintLayout
+    makes layout easy
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -55,7 +60,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageViewAttention" />
 
-
+        <!--
+        Checkbox and textview must be side by side.
+        Orientation must be horizontal and Linear Layout is perfect for
+        like this jobs
+        -->
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
